@@ -1,0 +1,627 @@
+/*Основной контент*/
+.container_room_loop {
+	height:485px;
+	display:flex;
+}
+/*Комнаты*/
+.room_loop1 {
+	width:981px;
+	height:485px;
+	background-image:url(image/room_loop1.jpg);
+	background-repeat:no-repeat;
+	background-size:100%;
+	transition:0.4s;
+	background-position:center;
+}
+
+/*прближение картинки фона*/
+.room_loop1:hover {
+	background-size:115%;
+	transition:0.4s;
+	background-position:center;
+}
+
+
+.room_loop_head {
+	height:485px;
+	width:538px;
+}
+
+.room_loop2 {
+	width:538px;
+	height:243px;
+	background-image:url(image/room_loop2.jpg);
+	background-repeat:no-repeat;
+	background-size:100%;
+	transition:0.4s;
+	background-position:center;
+}
+
+/*прближение картинки фона*/
+.room_loop2:hover {
+	background-size:115%;
+	transition:0.3s;
+}
+
+.room_loop3 {
+	width:538px;
+	height:242px;
+	background-image:url(image/room_loop3.jpg);
+	background-repeat:no-repeat;
+	background-size:100%;
+	transition:0.4s;
+	background-position:center;
+}
+
+/*прближение картинки фона*/
+.room_loop3:hover {
+	background-size:115%;
+	transition:0.3s;
+	background-position:center;
+}
+
+
+/*Блок с подробной информацией*/
+
+.expend_details_room {
+	height:866px;
+	display:block;
+}
+
+.container_expend_details_room {
+	width:1179px;
+	height:796px;
+	margin:70px auto;
+	position:relative;
+}
+/*Контейнер для блоков сведения и впечатлений*/
+.container_expend_details {
+	display:flex;
+	width:672px;
+	height:273px;
+	margin-bottom:20px
+
+}
+
+/*Блок сведение о номере*/
+.room_information {
+	height:273px;
+	width:280px;
+	margin-right:81px;
+}
+
+.container_expend_details_room h2 {
+	font-size:19px;
+	line-height:24px;
+	margin:0 0 24px 0;
+}
+
+.room_information p {
+	margin:0 0 5px 0;
+
+}
+
+.room_information b {
+	color:#575871;
+}
+
+.ul_room {
+	padding:0;
+}
+
+.ul_room li{
+	display:block;
+	width:243px;
+	height:48px;
+}
+
+.ul_room hr {
+	color:rgba(31, 32, 65, 0.1);;
+	margin:15px 0 20px 0;
+}
+
+.ul_room li:before {
+	content:'';
+	width:40px;
+	height:40px;
+	font-size:12px;
+	display:inline-block;
+	margin-right:5px;
+	float:left;
+}
+
+/*Расположение блоков до li*/
+#li_room1:before {
+	background-image:url(image/insert_emoticon.svg);
+	background-repeat:no-repeat;
+	background-size:90%;
+	margin:2px 5px 0 0;
+}
+
+/*Расположение блоков до li*/
+#li_room2:before {
+	background-image:url(image/location_city.svg);
+	background-repeat:no-repeat;
+	background-size:80%;
+}
+
+/*Расположение блоков до li*/
+#li_room3:before {
+	background-image:url(image/whatshot.svg);
+	background-repeat:no-repeat;
+	background-size:77%;
+}
+
+.impressions_room {
+	width:311px;
+	height:165px;
+}
+
+.container_impressions {
+	display:flex;
+}
+
+
+/*Блок с рейтингом впечатления*/
+.rating_impressions {
+	width:120px;
+	height:120px;
+	border-radius:50%;
+	background:url(image/Ellipse.jpg);
+	margin-right:30px;
+}
+
+/*Кол-во голосов*/
+.rating_impressions p {
+	text-align:center;
+	color:#BC9CFF;
+	font-weight:bold;
+}
+
+.rating_impressions p:first-child{
+	font-size:24px;
+	line-height:30px;
+	margin:35px 0 0 0;
+}
+
+.rating_impressions p:last-child{
+	font-size:12px;
+	line-height:15px;
+	margin:0;
+}
+
+.impressions_list {
+	width:161px;
+	height:96px;
+	margin-top:15px;
+}
+
+.ul_impressions {
+	padding:0;
+	list-style:none
+}
+
+.ul_impressions li {
+	margin-bottom:8px;
+}
+
+/*Блоки круги напротив li*/
+.ul_impressions li:before {
+	content:'';
+	width:10px;
+	height:10px;
+	display:inline-block;
+	border-radius:50%;
+	margin-right:5px;
+}
+
+#li_impressions1:before {
+	background:linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+}
+
+#li_impressions2:before {
+	background:linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
+#li_impressions3:before {
+	background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+#li_impressions4:before {
+	background:linear-gradient(180deg, #919191 0%, #3D4975 100%);
+}
+
+/*Отзывы посетителей*/
+.user_reviews {
+	height:306px;
+	width:711px;
+	color:rgba(31, 32, 65, 0.75);
+	font-size:14px;
+	line-height:24px;
+	position:relative;
+	margin-bottom:30px;
+}
+
+.user_reviews .otziv {
+	position:absolute;
+	top:0;
+	right:0;
+	color:rgba(31, 32, 65, 0.5);
+}
+
+.ul_reviews {
+	list-style:none;
+	padding:0;
+}
+
+.ul_reviews li {
+	margin-bottom:12px;
+}
+
+/*Аватарка пользователя*/
+.avatars:before {
+	content:'';
+	width:48px;
+	height:48px;
+	border:2px solid #FFFFFF;
+	box-sizing:border-box;
+	filter:drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.1));
+	border-radius:32px;
+	border-radius:50%;
+	display:inline-block;
+	float:left
+}
+
+.avatar_1:before {
+	background-image:url(image/user_1.png);
+}
+
+.avatar_2:before {
+	background-image:url(image/user_2.png);
+}
+
+.avatars span {
+	margin-left:60px;
+	display:block;
+}
+
+.avatars .head {
+	font-weight:bold;
+}
+
+/*Сердечки*/
+.text_reviews {
+	display:flex;
+	justify-content:space-between;
+}
+
+.text_reviews span{
+	display:block;
+	width:670px;
+	padding-left:15px;
+}
+
+.heart {
+	width:40px;
+	height:20px;
+	border-radius:22px;
+	margin-left:3px;
+	background-repeat:no-repeat;
+	position:relative;
+	cursor:pointer;
+}
+
+
+.heart i{
+	position:absolute;
+	top:5px;
+	left:5px;
+	font-size:10px;
+}
+
+.heart span {
+	margin-left:5px;
+	font-size:11px;
+	width:10px;
+}
+
+.heart_1 {
+	border:1px solid #B59DFF;
+	color:#BC9CFF;
+}
+
+.heart_2 {
+	border:1px solid rgba(31, 32, 65, 0.25);
+	box-sizing:border-box;
+	color:#C7C7CF;
+}
+
+.heart_2:hover {
+	color:#BC9CFF;
+	border-color:#BC9CFF;
+}
+
+/*Правила номера и отмена*/
+.order_rooms .container {
+	width:711px;
+	height:160px;
+	display:flex;
+}
+
+.order_rooms .container .order {
+	height:160px;
+	width:292px;
+	margin-right:100px;
+}
+
+/*Блок отмена (справа)*/
+.order_rooms .container .cancel {
+	height:160px;
+	width:341px;
+	line-height:24px;
+}
+
+.order h2 {
+	margin-left:21px;
+}
+
+/*Блок - правила (слева)*/
+.ul_order {
+	list-style:none;
+	padding:0;
+	color:rgba(31, 32, 65, 0.75);
+}
+
+.ul_order li {
+	margin-bottom:15px;
+}
+
+.ul_order .li_order3 {
+	display:flex;
+	margin-bottom:10px;
+}
+
+.ul_order span {
+	padding:0;
+	margin:0;
+	display:block;
+	width:250px;
+}
+
+.ul_order li:before {
+	content:'';
+	width:10px;
+	height:10px;
+	background-color:rgba(31, 32, 65, 0.25);;
+	display:inline-block;
+	margin-right:10px;
+	border-radius:50%;
+}
+
+/*Забронировать*/
+.booking {
+	height:511px;
+	width:380px;
+	position:absolute;
+	top:0px;
+	right:0;
+	border:1px solid rgba(0, 0, 0, 0.12);
+	box-shadow:0px 0px 25px rgba(0, 0, 0, 0.2);
+	border-radius:4px;
+
+}
+
+.booking .container {
+	margin:50px 30px 30px 30px;
+
+}
+
+/*Заголовок*/
+.booking .container .head {
+	display:flex;
+	justify-content:space-between;
+}
+
+.booking .container .head p {
+	margin:4px 0 0 0;
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.booking .container .head span {
+	margin-left:5px;
+	color:#BC9CFF;
+	font-size:16px;
+}
+
+/*Прибытие и отъезд*/
+.booking_arrival {
+	width:320px;
+	height:64.4px;
+	display:flex;
+	text-transform:uppercase;
+}
+
+.booking_arrival h2 {
+	margin-bottom:2px;
+	font-size:14px;
+
+}
+
+.container_arrival {
+	height:64.4px;
+	width:150px;
+	margin-right:20px;
+	position:relative;
+	transition:0.3s;
+}
+
+/*Наведение на инпуты*/
+.container_arrival input:hover {
+	border-color:#8C8C92;
+	transition:0.3s;
+}
+
+.container_departure input:hover {
+	border-color:#8C8C92;
+	transition:0.3s;
+}
+
+
+
+/*Стрелка - узнать больше*/
+.container_arrival:after ,.container_departure:after {
+	content:'';
+	width:15px;
+	height:15px;
+	display:inline-block;
+	position:absolute;
+	top:44px;
+	right:10px;
+	background-image:url(image/expand_more.png);
+	background-repeat:no-repeat;
+}
+
+.booking_arrival input {
+	width:135px;
+	height:41px;
+	border:1px solid rgba(31, 32, 65, 0.25);
+	border-radius:4px;
+	padding-left:15px;
+	cursor:pointer;
+}
+
+.container_departure {
+	height:64.4px;
+	width:150px;
+	position:relative;
+	transition:0.3s;
+}
+
+/*Блок гости*/
+.booking_guests {
+	height:64px;
+	width:320px;
+	margin-top:25px;
+	position:relative;
+	transition:0.3s;
+}
+
+.booking_guests input:hover {
+	border-color:#8C8C92;
+	transition:0.3s;
+}
+
+/*Стрелочка - узнать больше*/
+.booking_guests:after {
+	content:'';
+	width:15px;
+	height:15px;
+	display:inline-block;
+	position:absolute;
+	top:44px;
+	right:10px;
+	background-image:url(image/expand_more.png);
+	background-repeat:no-repeat;
+}
+
+.booking_guests h2 {
+	margin:0;
+}
+
+.booking_guests input {
+	height:44px;
+	width:305px;
+	border:1px solid rgba(31, 32, 65, 0.25);
+	border-radius:4px;
+	padding-left:15px;
+	cursor:pointer;
+}
+/*блок с ценами*/
+.booking_price {
+	height:104px;
+	width:319px;
+	margin-top:30px;
+	color:rgba(31, 32, 65, 0.75);
+}
+
+.booking_price .container_block1,.container_block2,.container_block3 {
+	display:flex;
+	justify-content:space-between;
+	margin-bottom:15px;
+}
+
+.booking_price .span_container {
+	position:relative;
+}
+
+.booking_price .span_container:after {
+	content:'';
+	width:20px;
+	height:20px;
+	border:1px solid rgba(31, 32, 65, 0.25);
+	border-radius:50%;
+	display:inline-block;
+	position:absolute;
+	top:0;
+	right:-30px;
+	background-image:url(image/i.svg);
+	background-repeat:no-repeat;
+	background-position:center;
+	cursor:pointer;
+}
+
+/*Итог ценообразования*/
+.result {
+	width:319px;
+	height:24px;
+	display:flex;
+	justify-content:space-between;
+	border-bottom:1px dashed rgba(31, 32, 65, 0.25);
+}
+
+/*Кнопка забронировать*/
+.to_book {
+	width:320px;
+	height:44px;
+	background:linear-gradient(180deg,#BC9CFF 0%, #8BA4F9 100%);
+	border-radius:22px;
+	margin-top:25px;
+	text-transform:uppercase;
+	text-align:center;
+	color:#fff;
+	cursor:pointer;
+}
+
+.to_book:hover {
+	background:linear-gradient(45deg,#BC9CFF 0%, #8BA4F9 100%);
+}
+
+.to_book p {
+	padding-top:14px;
+	font-weight:bold;
+	position:relative;
+	user-select:none;
+
+}
+
+.to_book p:after {
+	content:'';
+	width:44px;
+	height:44px;
+	background-image:url(image/arrow_forward.png);
+	display:inline-block;
+	background-repeat:no-repeat;
+	position:absolute;
+	right:-12px;
+}
+
+
+
+
+
+
+
+
+
+
+

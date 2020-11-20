@@ -1,0 +1,546 @@
+/*Блок с контентом*/
+.content_search_room {
+	margin:30px 120px 70px 175px;
+	line-height:15px;
+	font-size:12px;
+	display:flex;
+	flex-direction:row-reverse;
+	justify-content:space-between;
+
+}
+.content_search_room .h_span_block_hotel {
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+.data_arrival_in_otel, .guests_in_hotel{
+	height:64px;
+	width:266px;
+	margin:0 0 20.44px 0;
+	position:relative;
+}
+/*Левый бар*/
+
+.data_arrival_in_otel input, .guests_in_hotel input{
+	padding:12px 110px 14.4px 15px;
+	box-sizing:border-box;
+	border-radius:4px;
+	background:#FFF;
+	border:1px solid rgba(31, 32, 65, 0.25);
+	margin-top:5px;
+	cursor:pointer;
+	transition:0.2s;
+}
+
+.data_arrival_in_otel input:hover, .guests_in_hotel input:hover {
+	border-color:#848489;
+	transition:0.2s;
+}
+
+.content_search_room i {
+	position:absolute;
+	font-size:18px;
+	color:rgba(31, 32, 65, 0.5);
+	position:absolute;
+	top:33px;
+	right:15px;
+	cursor:pointer;
+}
+
+.content_search_room .price_hotel {
+	width:266px;
+	margin-bottom:30px;
+}
+
+.content_search_room .price_hotel input{
+	width:35px;
+	border:none;
+	text-align:right;
+	color:#8B8B9C;
+}
+
+.price_hotel .span_price_hotel{
+	color:#8B8B9C;
+}
+
+/*Слайдер выбора цен*/
+#form {
+    margin:0;
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    max-width:266px;
+    padding:5px 0;
+}
+.bar {
+    margin-bottom:7px;
+    padding:5px 0;
+}
+.button:hover {
+    background: #95272f;
+}
+.label {
+    color: #777777;
+    margin-bottom: 8px;
+}
+
+.order_in_house {
+	height:128px;
+	width:266px;
+}
+
+/*Чекбокс*/
+
+.order_in_house .checkbox_order {
+	color:rgba(31, 32, 65, 0.5);
+	font-size:14px;
+	display:flex;
+	flex-direction:column;
+	padding-top:6px;
+}
+
+ .checkbox_order label {
+	padding-top:11px;
+	cursor:pointer;
+	user-select:none;
+}
+
+ .custom-checkbox {
+	position:absolute;
+	z-index:-1;
+	opacity:0;
+}
+
+ .custom-checkbox {
+  display:inline-flex;
+  align-items:center;
+  user-select:none;
+}
+
+ .custom-checkbox+label::before {
+  content:'';
+  display:inline-block;
+  width:18px;
+  height:18px;
+  flex-shrink:0;
+  flex-grow:0;
+  border:2px solid rgba(31, 32, 65, 0.25);
+  border-radius:4px;
+  margin-right:0.5em;
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:50% 50%;
+  float:left;
+
+}
+
+ .custom-checkbox:checked+label::before {
+  border-color:#BC9CFF;
+  background-color:#FFF;
+  background-image:url("image/gal.png");
+ }
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color:#BC9CFF;
+}
+/* стили для активного состояния чекбокса (при нажатии на него)
+.custom-checkbox:not(:disabled):active+label::before {
+  border-color:#BC9CFF;
+}
+*/
+
+/* стили для чекбокса, находящегося в фокусе
+.custom-checkbox:focus+label::before {
+  box-shadow:0 0 3px 3px rgba(0, 123, 255, 0.25);
+}
+*/
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked 
+.custom-checkbox:focus:not(:checked)+label::before {
+  border-color:#BC9CFF;
+}
+*/
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled+label::before {
+  background-color:#FFF;
+  border-color:#C7C7CF;
+}
+
+/*блок доступность*/
+.availability {
+	height:148px;
+	width:266px;
+	margin-top:40px;
+	display:flex;
+	flex-direction:column;
+	user-select:none;
+}
+
+
+.availability .span_availability {
+	color:#575870;
+	font-weight:bold;
+}
+
+.availability label {
+	cursor:pointer;
+	padding-top:13px;
+	color:#8F8FA0;
+	font-size:12px;
+	line-height:14px;
+}
+
+.availability p {
+	margin:5px 0 0 28px;
+}
+
+
+
+/*Выпадающий блок*/
+
+.conveniences {
+	margin-top:5px;
+	width:266px;
+	height:44px;
+	border:1px solid rgba(31, 32, 65, 0.25);
+	box-sizing:border-box;
+	border-radius:4px;
+	padding:12px 91px 8px 15px;
+	position:relative;
+	cursor:pointer;
+	transition:0.2s;
+}
+
+.conveniences:hover {
+	border-color:#848489;
+	transition:0.2s;
+}
+
+.conveniences input {
+	border:none;
+	width:150px;
+	cursor:pointer;
+}
+
+.conveniences i {
+	position:absolute;
+	top:12px;
+}
+
+/*Блок основного контента*/
+
+.main_content_search_room{
+	width:853px;
+	height:1140px;
+	margin-right:50px;
+}
+
+.main_content_search_room h2 {
+	margin:0 0 21px 0;
+	font-size:24px;
+	line-height:30px;
+}
+
+.container_in_hotel {
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.container_in_hotel .room_in_hotel{
+	width:270px;
+	height:257px;
+	margin:0 12px 12px 0;
+	background-repeat:no-repeat;
+	box-shadow:0px 10px 20px rgba(31, 32, 65, 0.05);
+	border-radius:4px;
+	position:relative;
+	user-select:none;
+}
+
+.room_in_hotel .container {
+	height:151px;
+	width:270px;
+}
+
+
+.room1{
+	background:url(image/room_1.png);
+}
+.room2{
+	background:url(image/room_2.png);
+}
+.room3{
+	background:url(image/room_3.png);
+}
+.room4{
+	background:url(image/room_4.png);
+}
+.room5{
+	background:url(image/room_5.png);
+}
+.room6{
+	background:url(image/room_6.png);
+}
+.room7{
+	background:url(image/room_7.png);
+}
+.room8{
+	background:url(image/room_8.png);
+}
+.room9{
+	background:url(image/room_9.png);
+}
+.room10{
+	background:url(image/room_10.png);
+}
+.room11{
+	background:url(image/room_11.png);
+}
+.room12{
+	background:url(image/room_12.png);
+}
+/*Перелистывания картинок комнат (стрелки)*/
+
+.move_arrow {
+	width:42px;
+	height:151px;
+	cursor:pointer;
+	position:absolute;
+	transition:0.3s;
+	border-radius:4px;
+	opacity:0;
+}
+
+.room_in_hotel .container:hover > .move_arrow {
+	opacity:1;
+}
+
+.move_arrow i {
+	position:absolute;
+	top:75.5px;
+	color:white;
+}
+/*стрелка слева*/
+
+.arrow_left {
+	top:0;
+	left:0;
+	transition:0.3s;
+	background:transparent;
+	cursor:pointer;
+}
+/*стрелка справа*/
+
+.arrow_right {
+	top:0;
+	left:228px;
+	transform:matrix(-1, 0, 0, 1, 0, 0);
+	transition:0.3s;
+	cursor:pointer;
+	background:transparent;
+}
+
+.arrow_right:hover {
+	background:linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+	transition:0.3s;
+}
+
+.arrow_left:hover{
+	color:white;
+	background:linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+	transition:0.3s;
+}
+
+/*Круги в блоке со стрелками слайдера*/
+
+
+
+/*заголовоки и номера комнат*/
+
+.head_room {
+	height:24px;
+	width:230px;
+	display:flex;
+	position:absolute;
+	bottom:62px;
+	right:20px;
+	font-family:montserrat;
+}
+
+.container_in_hotel .head_room p, h2, h3{
+	margin:0;
+	padding:0;
+}
+
+.head_room p {
+	margin:0;
+	font-style:normal;
+	line-height:18px;
+}
+
+.head_room span {
+	color:#BC9CFF;
+	text-transform:uppercase;
+	line-height:15px;
+	padding:0 30px 0 4px;
+	font-weight:bold;
+	margin-top:3px;
+}
+
+.head_room p {
+	color: rgba(31, 32, 65, 0.5);
+	line-height:18px;
+}
+
+/*рейтинг в блоке комнат*/
+
+.rating {
+	width:230px;
+	height:32px;
+	border-top:1px solid #E8E8EC;
+	position:absolute;
+	bottom:15px;
+	right:20px;
+	display:flex;
+	justify-content:space-between;
+	padding-top:8px;
+}
+/*Звезды оценки*/
+.star {
+	width:120px;
+	height:24px;
+	display:flex;
+	overflow:hidden;
+}
+/*
+.star:not(:checked) > input {
+	display:none;
+}
+
+.star:not(:checked) > label {
+	color: lightgrey;
+}
+
+.star:not(:checked) > label:before {
+	content: '';
+	background-image:url(image/star.svg);
+}*/
+
+
+.stars {
+	width:20px;
+	height:20px;
+	padding-right:22px;
+	background-image:url(image/star.svg);
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+/*Отзывы*/
+.feedback {
+	height:18px;
+	width:90px;
+	font-size:14px;
+	line-height:18px;
+	text-align:right;
+	color: rgba(31, 32, 65, 0.5);
+	margin-top:5px;
+}
+
+.rating ul {
+	list-style:none;
+	display:flex;
+	margin:0;
+	padding:0;
+}
+
+/*Кружочки в контейнере с комнатами*/
+.container {
+	position:relative;
+}
+
+.in_circle {
+	position:absolute;
+	right:15px;
+	bottom:15px;
+	width:45px;
+	height:8px;
+	display:flex;
+}
+
+.room_in_hotel .container .circle {
+	width:7.5px;
+	height:7.49px;
+	border: 1px solid #FFFFFF;
+	box-sizing: border-box;
+	filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+	box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+	margin-right:3.75px;
+	border-radius:50%;
+}
+
+.room_in_hotel .container .circle:first-child {
+	background:#fff;
+}
+
+.room_in_hotel .container .circle:last-child {
+	margin:0;
+}
+
+.room_in_hotel .container .circle a {
+	padding:0;
+	margin:0;
+}
+
+
+/*Переключатель номеров*/
+
+.switch {
+	height:82px;
+	width:260px;
+	margin:41px auto 0 auto;
+}
+
+.switch .container {
+	display:flex;
+	box-shadow:none;
+}
+
+.switch .container p{
+	color:rgba(31, 32, 65, 0.5);
+	text-align:center;
+	font-size:12px;
+	line-height:15px;
+}
+
+/*Круги с нумерацией*/
+.switch .circle {
+	width:40px;
+	height:40px;
+	border-radius:22px;
+	box-shadow:none;	
+}
+
+.switch .circle:first-child {
+	background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.switch .container .circle:last-child {
+	background:linear-gradient(180deg,#6FCF97 0%, #66D2EA 100%);
+	position:relative;
+}
+
+.switch .container .circle_6 i {
+	font-size:24px;
+	line-height:20px;
+	color:white;
+	position:absolute;
+	top:11px;
+	right:9px;
+}
+
+
+.footer {
+	margin-top:255px;
+}

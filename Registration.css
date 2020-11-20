@@ -1,0 +1,251 @@
+/*Блок с регистрацией пользователя*/
+.block_registration {
+	height:684px;
+	background-image:url(image/registration_bg.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.block_registration .container {
+	height:684px;
+	padding:19px 577px;
+}
+
+.registration_user {
+	height:646px;
+	width:380px;
+	background-color:#fff;
+	border:1px solid rgba(0, 0, 0, 0.12);
+	border-radius:4px;
+	box-shadow:0px 0px 25px rgba(0,0,0, 0.2);
+}
+
+/*Отцентровка панели регистрации*/
+.registration_user .container_user {
+	height:576px;
+	width:320px;
+	padding:40px 30px 30px 30px;
+}
+
+/*Заголовок*/
+.registration_user .head h1{
+	margin:0;
+	font-size:24px;
+	line-height:30px;
+}
+
+/*Имя и фамилия*/
+.container_name {
+	margin-top:20px;
+}
+
+/*Инпуты*/
+.input_favorite {
+	height:44px;
+	width:320px;
+	border:1px solid rgba(31, 32, 65, 0.25);
+	box-sizing:border-box;
+	border-radius:4px;
+	margin-bottom:10px;
+	padding-left:15px;
+	color: rgba(31, 32, 65, 0.25);
+	cursor:pointer;
+	transition:0.2s;
+}
+
+.input_favorite:hover {
+	border-color:#6F6F74;
+	transition:0.2s;
+}
+
+.input_favorite:focus {
+	color:rgba(31, 32, 65, 0.75);
+}
+
+.container_name .user_name input:last-child {
+	margin:0;
+}
+
+/*Выбор полна (м/ж)*/
+.gender {
+	position:relative;
+	margin-top:11px;
+}
+
+.gender .gender_checkbox {
+	display:inline-flex;
+	align-items:center;
+	user-select:none;
+	position:absolute;
+	top:0;
+	opacity:0;
+}
+
+.gender label {
+	position:relative;
+	font-size:14px;
+	line-height:24px;
+	margin-left:30px;
+	user-select:none;
+	cursor:pointer;
+}
+
+.gender label:last-child {
+	margin-left:50px;
+}
+
+/*Чекбоксы*/
+.gender_checkbox+label::before {
+	content:'';
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	border:1px solid rgba(31, 32, 65, 0.25);;
+	box-sizing:border-box;
+	display:inline-block;
+	position:absolute;
+	left:-30px;
+	top:-0.5px;
+}
+
+/*Наведен на чекбок но не нажал на него*/
+.gender_checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color:#BC9CFF;
+}
+
+/*Нажал на чекбокс*/
+.gender_checkbox:checked+label::before {
+	background-image:url(image/Rectangle.svg);
+	background-position:center;
+	background-repeat:no-repeat;
+	border-color:#BC9CFF;
+}
+
+
+/*Дата рождения*/
+.date_birthday{
+	text-transform:uppercase;
+	width:320px;
+	height:64px;
+	line-height:15px;
+	margin-top:20px;
+}
+
+/*Данные для входа*/
+.data_login {
+	height:116px;
+	text-transform:uppercase;
+	margin-top:20px;
+}
+
+/*Спеиальное предложение*/
+.special_offer {
+	height:22px;
+	width:320px;
+	position:relative;
+	user-select:none;
+	margin-top:10px;
+	cursor:pointer;
+}
+
+.special_offer label {
+	margin-left:30px;
+	cursor:pointer;
+}
+
+.special_offer input {
+	opacity:0;
+}
+
+/*Чекбокс спецпредложения*/
+.offer_checkbox+label:before {
+	content:'';
+	width:40px;
+	height:20px;
+	display:inline-block;
+	border:1px solid rgba(31, 32, 65, 0.25);
+	border-radius:10px;
+	position:absolute;
+	left:0;
+	background-image:url(image/Rectangle_2.svg);
+	background-repeat:no-repeat;
+	background-position:4px 4px;
+	transition:0.3s;
+	cursor:pointer;
+}
+
+/*Нажал на кнопку*/
+.offer_checkbox:checked+label::before {
+	background-image:url(image/Rectangle.svg);
+	background-position:right;
+	background-position:23px 4px;
+	border-color:#BC9CFF;
+	transition:0.3s;
+}
+
+/*Перейти к оплате (кнопка входа в login.html)*/
+.buy, .btn_login {
+	width:320px;
+	height:44px;
+	background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius:22px;
+	margin-top:20px;
+	text-align:center;
+	text-transform:uppercase;
+	color:#fff;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+.buy p,.btn_login p {
+	margin:0;
+	padding-top:12px;
+	position:relative;
+}
+
+.buy p:after,.btn_login p:after {
+	content:'';
+	width:18px;
+	height:18px;
+	background:url(image/arrow_forward.png);
+	display:inline-block;
+	position:absolute;
+	top:12px;
+	right:15px;
+}
+
+
+/*Если есть аакаунт*/
+.if_have_account {
+	display:flex;
+	justify-content:space-between;
+	margin-top:30px;
+}
+
+.if_have_account .login {
+	height:42.4px;
+	width:97.4px;
+	border:2px solid #BC9CFF;
+	border-radius:22px;
+	text-align:center;
+	text-transform:uppercase;
+	color:#BC9CFF;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+.if_have_account .question {
+	width:186px;
+}
+
+.if_have_account .question p,.if_have_account .login p{
+	margin:12px 0 0 0;
+}
+
+
+
+
+
+
+
+
