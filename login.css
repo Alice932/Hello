@@ -1,0 +1,42 @@
+/*Блок с авторизацией пользователя*/
+.block_login {
+	height:684px;
+	background-image:url(image/registration_bg.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.block_login .container {
+	height:684px;
+	padding:172px 577px;
+}
+
+.login_user {
+	height:358px;
+	width:380px;
+	background-color:#fff;
+	border:1px solid rgba(0, 0, 0, 0.12);
+	border-radius:4px;
+	box-shadow:0px 0px 25px rgba(0,0,0, 0.2);
+}
+/*Контейнер с информацией*/
+.container_user {
+	padding:40px 30px 32px 30px;
+	height:286px;
+}
+/*Инпуты*/
+
+
+/*Внопка входа*/
+.container_user .btn_login {
+	margin-top:10px;
+}
+
+/*Если нет аккаунта*/
+.container_user .if_have_account {
+	margin-top:25px;
+}
+
+.container_user .btn_login:focus {
+	color:red;
+}
