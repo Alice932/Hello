@@ -242,7 +242,13 @@
 	margin:12px 0 0 0;
 }
 
+/*Адаптивная верстка (дял смартфона)*/
 
+@media screen and (min-width:320px) and (max-width:480px) {
+	.block_registration .container {
+		padding:20px 0 0 30px;
+	}
+}
 
 
 
