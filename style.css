@@ -14,6 +14,15 @@ a {
 a:hover {
 	color:#C8AEFF;
 }
+
+h1 {
+	font-size:26.742px;
+	margin:0;
+}
+
+input:active, input:focus {
+	outline:none;
+}
 /*верхушка сайта*/
 .header {
 	height:70px;
@@ -523,7 +532,7 @@ a:hover {
 
 .footer .footer_list .email {
 	height:44px;
-	width:260px;
+	width:255px;
 	border:1px solid rgba(31, 32, 65, 0.25);
 	box-sizing: border-box;
 	border-radius: 4px;
@@ -531,12 +540,16 @@ a:hover {
 }
 
 .footer .footer_list .email input {
-	padding:10px 55px 10px 10px;
+	padding:10px 45px 10px 10px;
 	font-size:1rem;
 	border:none;
-	color: rgba(31, 32, 65, 0.25);
+	color:rgba(31, 32, 65, 0.25);
 	border-radius:3px;
 	cursor:pointer;
+}
+
+.footer .footer_list .email input:focus {
+	color:#000;
 }
 
 .footer .block1 {
@@ -588,6 +601,9 @@ a:hover {
 
 /*Адаптивная верстка (для смартфонов)*/
 @media all and (max-width:480px ) and (min-width:320px) {
+	h1 {
+		font-size:20px;
+	}
 	.right_Part_Header {
 		display:none;
 		justify-content:space-between;
@@ -599,8 +615,37 @@ a:hover {
 	}
 	.content .search_room {
 		position:relative;
-		top:10px;
-		left:10px;
+		top:20px;
+		left:20px;
+		max-width:320px; 
+	}
+	.content .search_room .block_date {
+		max-width:320px;
+		max-height:150px;
+		justify-content:flex-start;
+	}
+
+	.search_room .block3,.guests {
+		max-width:220px;
+		margin:5px 0 0 0;
+	}
+
+	.search_room .block_date p {
+		margin:2px 0 2px 0;
+		padding:0;
+	}
+
+	.content .search_room .residence .block2 {
+		margin:5px 0 0 0 !important;
+	}
+
+	.search_room .block4 {
+		margin:10px 0 0 0;
+		max-width:250px;
+	}
+
+	.date_arrival, .date_departure {
+		width:220px;
 	}
 
 	.footer {
@@ -637,5 +682,29 @@ a:hover {
 	}.footer .block5 {
 		margin:0;
 	}
+	.dropBlock, .drop_block_row {
+		width:220px;
+	}
+
+	.drop_block_item {
+		height:180px !important;
+		width:220px !important;
+	}
+
+	.drop_function {
+		padding-top:30px;
+	}
+
+	#dropItem1 {
+		margin-right:18px;
+	}
+	#dropItem2 {
+		margin-right:60px;
+	}
+	#dropItem3 {
+		margin-right:10px;
+	}
+
+
 
 }
