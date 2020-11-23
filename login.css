@@ -45,5 +45,14 @@
 	.block_login .container {
 		padding:60px 0 0 30px;
 	}
+	.login_user {
+		max-width:320px;
+	}
+	.login_user input {
+		width:260px;
+	}
 	
+	.container_user .btn_login {
+		width:260px;
+	}
 }

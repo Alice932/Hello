@@ -26,6 +26,7 @@ input:active, input:focus {
 
 button {
 	border:none;
+	outline:none;
 }
 /*верхушка сайта*/
 .header {
@@ -541,21 +542,23 @@ button {
 
 .search_room .arrow {
 	position:absolute;
-	width:0; 
-	height:0;
-	border-left:7px solid transparent;
-	border-right:7px solid transparent;
-	border-top:14px solid #8F8FA0;
+	width:15px;
+	height:9px;
+	background-position:4px 4px 0 0;
+	background-repeat:no-repeat;
+	right:15px;
+	top:17px;
+	background-image:url(image/expand_more.svg);
 }
 
 .search_room .block1 .arrow, .block2, .arrow {
-	top:14px;
-	right:14px;
+	top:16px;
+	right:15px;
 }
 
 .search_room .block3 .arrow {
-	right:20px;
-	top:15px;
+	right:15px;
+	top:17px;
 }
 /* Блок с подбором номера*/
 .search_room .block4{
@@ -649,7 +652,7 @@ button {
 }
 
 .footer .footer_list .email input {
-	padding:10px 45px 10px 10px;
+	padding:10px 37px 10px 10px;
 	font-size:1rem;
 	border:none;
 	color:rgba(31, 32, 65, 0.25);
