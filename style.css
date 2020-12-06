@@ -372,23 +372,25 @@ button {
 	z-index:1;
 	position:relative;
 	top:-30px;
-	left:-15px;
+	left:-17px;
 	padding-top:46px;
 }
 
 .calendar {
 	width:320px;
-	height:369px;
+	height:389px;
 	box-sizing:border-box;
 	background:#fff;
 	padding:20px 0 20px 25px;
 	border:1px solid rgba(31, 32, 65, 0.25);
 	border-radius:4px;
+	font-size:12px;
+	line-height:15px;
 	box-shadow:0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 
 .calendar h2 {
-	margin:0 0 40px 0;
+	margin:0 0 30px 0;
 	color:#000;
 	text-transform:capitalize;
 }
@@ -429,20 +431,22 @@ button {
 	grid-template-columns:repeat(auto-fit, minmax(25px, 1fr));
 	grid-gap:10px;
 	box-sizing:border-box;
+	text-transform:capitalize;
 }
 
 .calendar .container .date div {
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	height:25px;
 	color:green;
 }
 
 .calendar .container .date div.day {
 	font-weight:bold;
 	color:#BC9CFF;
+	padding-left:10px;
 }
+
 
 /*Месяц*/
 .month {
@@ -453,17 +457,19 @@ button {
 /*Числа*/
 .calendar .container .date .number {
 	color:#8F8FA0;
+	height:40px;
+	width:40px;
 }
 
 /*функции календаря*/
 .calendar .container .function {
 	width:280px;
 	height:15px;
-	margin-top:50px;
 	display:flex;
 	justify-content:space-between;
 	color:#BC9CFF;
 	font-weight:bold;
+	margin-top:20px;
 }
 
 /*Выпадение календаря*/
@@ -482,7 +488,12 @@ button {
 .calendar_main:hover {
 	display:block;
 }
-
+.calendar .container .date .number:hover {
+	background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+	border-radius:22px;
+	color:white;
+	font-weight:bold;
+}
 
 
 .block_date {

@@ -31,6 +31,39 @@
 	cursor:pointer;
 	transition:0.2s;
 }
+/*Исправить грешок (parcel or webpack)*/
+.h_span_block_hotel:after {
+	content:'';
+	display:inline-block;
+	position:absolute;
+	top:38px;
+	right:15px;
+	width:12px;
+	height:8px;
+	background-image:url(image/expand_more.svg);
+}
+
+.conveniences:after {
+	content:'';
+	display:inline-block;
+	position:absolute;
+	top:18px;
+	right:13px;
+	width:12px;
+	height:8px;
+	background-image:url(image/expand_more.svg);
+}
+
+.guests:after {
+	content:'';
+	display:inline-block;
+	position:absolute;
+	top:18px;
+	right:13px;
+	width:12px;
+	height:8px;
+	background-image:url(image/expand_more.svg);
+}
 
 .data_arrival_in_otel input:hover, .guests_in_hotel input:hover {
 	border-color:#848489;
@@ -45,24 +78,7 @@
 	padding:10px 0;
 }
 
-.left_bar .guests i {
-	position:absolute !important;
-	top:14px;
-}
 
-
-/*.input_favorite {
-	margin:0;
-}*/
-
-
-/*.input_favorite {
-	width:266px;
-}
-
-.guests input:hover {
-	display:block;
-}*/
 .guests .dropBlock{
 	display:none;
 	z-index:1;
@@ -533,6 +549,11 @@
 }
 
 .stars_border:hover {
+	background-image:url(image/star.svg);
+}
+
+
+#star5:hover > #star4 {
 	background-image:url(image/star.svg);
 }
 
