@@ -212,10 +212,52 @@
 							<input class="departure_input" placeholder="19.08.2019" autocomplete="off" readonly="">
 						</div>
 					</div>
-
+						<!-- <input class="guests_input" placeholder="3 гостя" autocomplete="off" readonly=""> -->
 					<div class="booking_guests">
 						<h2>гости</h2>
-						<input class="guests_input" placeholder="3 гостя" autocomplete="off" readonly="">
+						<div class="guests">
+							<span id="temp">3 гостя</span>
+						<div class="dropBlock">
+							<div class="drop_block_item">
+								<div class="drop_block_row">
+									<span class="dropItem" id="dropItem1">Взрослые</span>
+									<button class="circle_drop_item circle_drop_minus" data-direction="minus">
+										-
+									</button>
+										<input type="text" class="counter" value="0">
+									<button class="circle_drop_item circle_drop_plus" data-direction="plus" onclick="backCircle()">
+										+
+									</button>
+								</div>
+								<div class="drop_block_row">
+									<span class="dropItem" id="dropItem2">Дети</span>
+									<button class="circle_drop_item circle_drop_minus" data-direction="minus">
+										-
+									</button>
+										<input class="counter" value="0">
+									<button class="circle_drop_item circle_drop_plus"data-direction="plus">
+										+
+									</button>
+								</div>
+								<div class="drop_block_row">
+									<span class="dropItem" id="dropItem3">Младенцы</span>
+									<button class="circle_drop_item circle_drop_minus" data-direction="minus">
+										-
+									</button>
+										<input class="counter" value="0">
+									<button class="circle_drop_item circle_drop_plus" data-direction="plus">
+										+
+									</button>
+								</div>
+								<div class="drop_function">
+									<a href="#!" id="clear" data-direction="clear" class="link_drop_function">ОЧИСТИТЬ</a>
+									<a href="#!" class="link_drop_function">ПРИМЕНИТЬ</a>
+								</div>
+							</div>
+						</div>
+							<div class="arrow">
+							</div>
+					</div>
 					</div>
 
 					<div class="booking_price">
@@ -239,9 +281,11 @@
 						<h2>Итого</h2>
 						<h2>38 081₽</h2>
 					</div>
-					<div class="to_book">
-						<p>забронировать</p>
-					</div>
+					<a href="login.html">
+						<div class="to_book">
+							<p>забронировать</p>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>

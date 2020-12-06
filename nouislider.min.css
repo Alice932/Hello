@@ -12,6 +12,8 @@
 	background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 	box-shadow:none;
 	right:auto;
+	position:absolute !important;
+	z-index:0 !important;
 }
 
 .noUi-handle:after,.noUi-handle:before {

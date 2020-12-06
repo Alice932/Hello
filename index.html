@@ -9,7 +9,8 @@
 	<script src="https://kit.fontawesome.com/bc390f5649.js" crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
 	<title>Главная «Toxin» | Отели</title>
 </head>
 <body>
@@ -30,11 +31,6 @@
 					<a href="#" id="arrow_list_li">
 					Услуги
 					</a>
-					<ul>
-						<li><a href="#">text1</a></li>
-						<li><a href="#">text1</a></li>
-						<li><a href="#">text1</a></li>
-					</ul>
 		   	   </li>
 				<li>
 					<a href="#">
@@ -48,11 +44,6 @@
 				</li>
 				<li>
 					<a href="#" id="arrow_list_li">Соглашения</a>
-					<ul>
-						<li><a href="#">text1</a></li>
-						<li><a href="#">text1</a></li>
-						<li><a href="#">text1</a></li>
-					</ul>
 				</li>	
 		</ul>
 	</div>
@@ -71,7 +62,7 @@
 	</div>
 </div>
 
-<div class="burger">
+<div class="burger burger_menu_active">
 	<button class="border1 border"></button>
 	<button class="border2 border"></button>
 	<button class="border3 border"></button>
@@ -109,26 +100,80 @@
 					<p>
 						Прибытие
 					</p>
-					<a href="#">
 						<div class="date_arrival">
-							<input class="arrival_input" placeholder="ДД.ММ.ГГГГ" readonly="" autocomplete="off">
+							<!-- <input class="arrival_input" placeholder="ДД.ММ.ГГГГ" readonly="" autocomplete="off"> -->
+							ДД.ММ.ГГГГ
 							<div class="arrow">
 							</div>
+							<div class="calendar_main">
+								<div class="calendar">
+									<div class="container">
+									<div class="month">
+										<h2>Август 2020</h2></div>
+										<div class="date">
+											<div class="day">Пн</div>
+											<div class="day">Вт</div>
+											<div class="day">Ср</div>
+											<div class="day">Чт</div>
+											<div class="day">Пт</div>
+											<div class="day">Сб</div>
+											<div class="day">Вс</div>
+											<div class="number">29</div>
+											<div class="number">30</div>
+											<div class="number">31</div>
+											<div class="number">1</div>
+											<div class="number">2</div>
+											<div class="number">3</div>
+											<div class="number">4</div>
+											<div class="number">5</div>
+											<div class="number">6</div>
+											<div class="number">7</div>
+											<div class="number">8</div>
+											<div class="number">9</div>
+											<div class="number">10</div>
+											<div class="number">11</div>
+											<div class="number">12</div>
+											<div class="number">13</div>
+											<div class="number">14</div>
+											<div class="number">15</div>
+											<div class="number">16</div>
+											<div class="number">17</div>
+											<div class="number">18</div>
+											<div class="number">19</div>
+											<div class="number">20</div>
+											<div class="number">21</div>
+											<div class="number">22</div>
+											<div class="number">23</div>
+											<div class="number">24</div>
+											<div class="number">25</div>
+											<div class="number">26</div>
+											<div class="number">27</div>
+											<div class="number">28</div>
+											<div class="number">29</div>
+											<div class="number">30</div>
+											<div class="number">31</div>
+											<div class="number">1</div>
+										</div>
+										<div class="function">
+											<div class="clear">Очистить</div>
+											<div class="apply">Применить</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</a>
 				</div>
 				<!-- Блок времени выезда -->
 				<div class="block2" style="margin-left:18px;">
 					<p>
 						Выезд
 					</p>
-					<a href="#">
 						<div class="date_departure">
-							<input class="departure_input" placeholder="ДД.ММ.ГГГГ" autocomplete="off" readonly="">
+							ДД.ММ.ГГГГ
+							<!-- <input class="departure_input" placeholder="ДД.ММ.ГГГГ" autocomplete="off" readonly=""> -->
 							<div class="arrow">
 							</div>
 						</div>
-					</a>
 				</div>
 				<div class="block3">
 					<p>
@@ -247,6 +292,6 @@
 </div>
 
 <script src="js/click.js"></script>
-
+<script src="js/menu.js"></script> 
 </body>
 </html>

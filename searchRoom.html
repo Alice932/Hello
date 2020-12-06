@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="fontawesome.min.css">
 	<script type="text/javascript" src="awesome/fontawesome.min.js"></script>
 	<script src="https://kit.fontawesome.com/bc390f5649.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<link rel="stylesheet" href="nouislider.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -111,10 +112,18 @@
 					<!-- Слайдер (стрелки по бокам кружочки) -->
 					<div class="container">
 							<div class="move_arrow arrow_left">
-								 <i class="fas fa-chevron-left"></i>
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+									 </div>
+								</a>
 							</div>
 							<div class="move_arrow arrow_right">
-								<i class="fas fa-chevron-left"></i>
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+										</div>
+								</a>
 							</div>
 						<div class="in_circle">
 							<a href="roomDetails.html" class="circle circle_1">
@@ -134,18 +143,13 @@
 					<p style="font-size:12.5px;line-height: 16px;margin-top:3px;"><b>9 990₽</b> в сутки</p>
 					</div>
 					<div class="rating">
-						<!-- <div class="star">
-							<input type="radio" id="star_5" name="rating" value="5">
-							<label for="star_5"></label>	
-							<input type="radio" id="star_4" name="rating" value="4">
-							<label for="star_4"></label>    
-							<input type="radio" id="star_3" name="rating" value="3">
-							<label for="star_3"></label>  
-							<input type="radio" id="star_2" name="rating" value="2">
-							<label for="star_2"></label>    
-							<input type="radio" id="star_1" name="rating" value="1">
-							<label for="star_1"></label>
-						</div> -->
+						<div class="star">
+							<div class="stars" id="star1"></div>
+							<div class="stars" id="star2"></div>
+							<div class="stars" id="star3"></div>
+							<div class="stars" id="star4"></div>
+							<div class="stars" id="star5"></div>
+						</div>
 						<div class="feedback"><span><b>145</b> Отзывов</span></div>
 					</div>
 				</div>
@@ -153,19 +157,27 @@
 					<!-- Слайдер (стрелки по бокам) -->
 					<div class="container">
 						<div class="move_arrow arrow_left">
-							 <i class="fas fa-chevron-left"></i>
-						</div>
-						<div class="move_arrow arrow_right">
-							<i class="fas fa-chevron-left"></i>
-						</div>
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+									 </div>
+								</a>
+							</div>
+							<div class="move_arrow arrow_right">
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+										</div>
+								</a>
+							</div>
 						<div class="in_circle">
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
 						</div>
 					</div>
@@ -181,7 +193,7 @@
 							<div class="stars" id="star2"></div>
 							<div class="stars" id="star3"></div>
 							<div class="stars" id="star4"></div>
-							<div class="stars" id="star5"></div>
+							<div class="stars_border" id="star5"></div>
 						</div>
 						<div class="feedback"><span><b>65</b> Отзывов</span></div>
 					</div>
@@ -190,19 +202,27 @@
 					<!-- Слайдер (стрелки по бокам) -->
 					<div class="container">
 						<div class="move_arrow arrow_left">
-							 <i class="fas fa-chevron-left"></i>
-						</div>
-						<div class="move_arrow arrow_right">
-							<i class="fas fa-chevron-left"></i>
-						</div>
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+									 </div>
+								</a>
+							</div>
+							<div class="move_arrow arrow_right">
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+										</div>
+								</a>
+							</div>
 						<div class="in_circle">
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
 						</div>
 					</div>
@@ -217,8 +237,8 @@
 							<div class="stars" id="star1"></div>
 							<div class="stars" id="star2"></div>
 							<div class="stars" id="star3"></div>
-							<div class="stars" id="star4"></div>
-							<div class="stars" id="star5"></div>
+							<div class="stars_border" id="star4"></div>
+							<div class="stars_border" id="star5"></div>
 						</div>
 						<div class="feedback"><span><b>35</b> Отзывов</span></div>
 					</div>
@@ -226,20 +246,28 @@
 				<div class="room4 room_in_hotel">
 					<!-- Слайдер (стрелки по бокам) -->
 					<div class="container">
-						<div class="move_arrow arrow_left">
-							 <i class="fas fa-chevron-left"></i>
-						</div>
-						<div class="move_arrow arrow_right">
-							<i class="fas fa-chevron-left"></i>
-						</div>
+						<<div class="move_arrow arrow_left">
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+									 </div>
+								</a>
+							</div>
+							<div class="move_arrow arrow_right">
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+										</div>
+								</a>
+							</div>
 						<div class="in_circle">
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
 						</div>
 					</div>
@@ -263,20 +291,28 @@
 				<div class="room5 room_in_hotel">
 					<!-- Слайдер (стрелки по бокам) -->
 					<div class="container">
-						<div class="move_arrow arrow_left">
-							 <i class="fas fa-chevron-left"></i>
-						</div>
-						<div class="move_arrow arrow_right">
-							<i class="fas fa-chevron-left"></i>
-						</div>
+						<<div class="move_arrow arrow_left">
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+									 </div>
+								</a>
+							</div>
+							<div class="move_arrow arrow_right">
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+										</div>
+								</a>
+							</div>
 						<div class="in_circle">
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
 						</div>
 					</div>
@@ -292,7 +328,7 @@
 							<div class="stars" id="star2"></div>
 							<div class="stars" id="star3"></div>
 							<div class="stars" id="star4"></div>
-							<div class="stars" id="star5"></div>
+							<div class="stars_border" id="star5"></div>
 						</div>
 						<div class="feedback"><span><b>44</b> Отзывов</span></div>
 					</div>
@@ -301,19 +337,27 @@
 					<!-- Слайдер (стрелки по бокам) -->
 					<div class="container">
 						<div class="move_arrow arrow_left">
-							 <i class="fas fa-chevron-left"></i>
-						</div>
-						<div class="move_arrow arrow_right">
-							<i class="fas fa-chevron-left"></i>
-						</div>
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+									 </div>
+								</a>
+							</div>
+							<div class="move_arrow arrow_right">
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+										</div>
+								</a>
+							</div>
 						<div class="in_circle">
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
 						</div>
 					</div>
@@ -328,8 +372,8 @@
 							<div class="stars" id="star1"></div>
 							<div class="stars" id="star2"></div>
 							<div class="stars" id="star3"></div>
-							<div class="stars" id="star4"></div>
-							<div class="stars" id="star5"></div>
+							<div class="stars_border" id="star4"></div>
+							<div class="stars_border" id="star5"></div>
 						</div>
 						<div class="feedback"><span><b>56</b> Отзывов</span></div>
 					</div>
@@ -338,19 +382,27 @@
 					<!-- Слайдер (стрелки по бокам) -->
 					<div class="container">
 						<div class="move_arrow arrow_left">
-							 <i class="fas fa-chevron-left"></i>
-						</div>
-						<div class="move_arrow arrow_right">
-							<i class="fas fa-chevron-left"></i>
-						</div>
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+									 </div>
+								</a>
+							</div>
+							<div class="move_arrow arrow_right">
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+										</div>
+								</a>
+							</div>
 						<div class="in_circle">
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
 						</div>
 					</div>
@@ -375,19 +427,27 @@
 					<!-- Слайдер (стрелки по бокам) -->
 					<div class="container">
 						<div class="move_arrow arrow_left">
-							 <i class="fas fa-chevron-left"></i>
-						</div>
-						<div class="move_arrow arrow_right">
-							<i class="fas fa-chevron-left"></i>
-						</div>
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+									 </div>
+								</a>
+							</div>
+							<div class="move_arrow arrow_right">
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+										</div>
+								</a>
+							</div>
 						<div class="in_circle">
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
 						</div>
 					</div>
@@ -403,7 +463,7 @@
 							<div class="stars" id="star2"></div>
 							<div class="stars" id="star3"></div>
 							<div class="stars" id="star4"></div>
-							<div class="stars" id="star5"></div>
+							<div class="stars_border" id="star5"></div>
 						</div>
 						<div class="feedback"><span><b>39</b> Отзывов</span></div>
 					</div>
@@ -412,19 +472,27 @@
 					<!-- Слайдер (стрелки по бокам) -->
 					<div class="container">
 						<div class="move_arrow arrow_left">
-							 <i class="fas fa-chevron-left"></i>
-						</div>
-						<div class="move_arrow arrow_right">
-							<i class="fas fa-chevron-left"></i>
-						</div>
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+									 </div>
+								</a>
+							</div>
+							<div class="move_arrow arrow_right">
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+										</div>
+								</a>
+							</div>
 						<div class="in_circle">
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
 						</div>
 					</div>
@@ -439,8 +507,8 @@
 							<div class="stars" id="star1"></div>
 							<div class="stars" id="star2"></div>
 							<div class="stars" id="star3"></div>
-							<div class="stars" id="star4"></div>
-							<div class="stars" id="star5"></div>
+							<div class="stars_border" id="star4"></div>
+							<div class="stars_border" id="star5"></div>
 						</div>
 						<div class="feedback"><span><b>77</b> Отзывов</span></div>
 					</div>
@@ -449,19 +517,27 @@
 					<!-- Слайдер (стрелки по бокам) -->
 					<div class="container">
 						<div class="move_arrow arrow_left">
-							 <i class="fas fa-chevron-left"></i>
-						</div>
-						<div class="move_arrow arrow_right">
-							<i class="fas fa-chevron-left"></i>
-						</div>
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+									 </div>
+								</a>
+							</div>
+							<div class="move_arrow arrow_right">
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+										</div>
+								</a>
+							</div>
 						<div class="in_circle">
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
 						</div>
 					</div>
@@ -486,19 +562,27 @@
 					<!-- Слайдер (стрелки по бокам) -->
 					<div class="container">
 						<div class="move_arrow arrow_left">
-							 <i class="fas fa-chevron-left"></i>
-						</div>
-						<div class="move_arrow arrow_right">
-							<i class="fas fa-chevron-left"></i>
-						</div>
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+									 </div>
+								</a>
+							</div>
+							<div class="move_arrow arrow_right">
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+										</div>
+								</a>
+							</div>
 						<div class="in_circle">
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
 						</div>
 					</div>
@@ -513,8 +597,8 @@
 							<div class="stars" id="star1"></div>
 							<div class="stars" id="star2"></div>
 							<div class="stars" id="star3"></div>
-							<div class="stars" id="star4"></div>
-							<div class="stars" id="star5"></div>
+							<div class="stars_border" id="star4"></div>
+							<div class="stars_border" id="star5"></div>
 						</div>
 						<div class="feedback"><span><b>15</b> Отзывов</span></div>
 					</div>
@@ -523,19 +607,27 @@
 					<!-- Слайдер (стрелки по бокам) -->
 					<div class="container">
 						<div class="move_arrow arrow_left">
-							 <i class="fas fa-chevron-left"></i>
-						</div>
-						<div class="move_arrow arrow_right">
-							<i class="fas fa-chevron-left"></i>
-						</div>
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+									 </div>
+								</a>
+							</div>
+							<div class="move_arrow arrow_right">
+								<a href="roomDetails.html">
+									<div class="container_a">
+									 	<div class="icon"></div>
+										</div>
+								</a>
+							</div>
 						<div class="in_circle">
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
-							<a href="#" class="circle circle_1">
+							<a href="roomDetails.html" class="circle circle_1">
 							</a>
 						</div>
 					</div>
@@ -550,8 +642,8 @@
 							<div class="stars" id="star1"></div>
 							<div class="stars" id="star2"></div>
 							<div class="stars" id="star3"></div>
-							<div class="stars" id="star4"></div>
-							<div class="stars" id="star5"></div>
+							<div class="stars_border" id="star4"></div>
+							<div class="stars_border" id="star5"></div>
 						</div>
 						<div class="feedback"><span><b>55</b> Отзывов</span></div>
 					</div>
@@ -592,12 +684,50 @@
 				<i class="fas fa-angle-down"></i>
 				
 			</div>
-
-			<div class="guests_in_hotel" >
-				<span class="h_span_block_hotel">гости</span>
-				<input type="text" autocomplete="off" placeholder="3 гостя, 1 младенец" readonly="">
-				<i class="fas fa-angle-down"></i>
-			</div>
+					<div class="guests">
+						<!-- input type="text" autocomplete="off" placeholder="3 гостя, 1 младенец" readonly="" class="input_favorite">
+						<i class="fas fa-angle-down"></i> -->
+						<span id="temp">3 гостя, 1 младенец</span>
+						<i class="fas fa-angle-down"></i>
+						<div class="dropBlock">
+							<div class="drop_block_item">
+								<div class="drop_block_row">
+									<span class="dropItem" id="dropItem1">Взрослые</span>
+									<button class="circle_drop_item circle_drop_minus" data-direction="minus">
+										-
+									</button>
+										<input type="text" class="counter" value="0">
+									<button class="circle_drop_item circle_drop_plus" data-direction="plus" onclick="backCircle()">
+										+
+									</button>
+								</div>
+								<div class="drop_block_row">
+									<span class="dropItem" id="dropItem2">Дети</span>
+									<button class="circle_drop_item circle_drop_minus" data-direction="minus">
+										-
+									</button>
+										<input class="counter" value="0">
+									<button class="circle_drop_item circle_drop_plus"data-direction="plus">
+										+
+									</button>
+								</div>
+								<div class="drop_block_row">
+									<span class="dropItem" id="dropItem3">Младенцы</span>
+									<button class="circle_drop_item circle_drop_minus" data-direction="minus">
+										-
+									</button>
+										<input class="counter" value="0">
+									<button class="circle_drop_item circle_drop_plus" data-direction="plus">
+										+
+									</button>
+								</div>
+								<div class="drop_function">
+									<a href="#!" id="clear" data-direction="clear" class="link_drop_function">ОЧИСТИТЬ</a>
+									<a href="#!" class="link_drop_function">ПРИМЕНИТЬ</a>
+								</div>
+							</div>
+						</div>
+					</div>
 
 			<div class="price_hotel">
 				<span style="margin-right:35px;" class="h_span_block_hotel">диапазон цены</span>
@@ -743,5 +873,6 @@
 
 <script src="js/nouislider.min.js"></script>
 <script src="js/slider.js"></script>
+<script type="js/click.js"></script>
 </body>
 </html>

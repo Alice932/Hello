@@ -37,6 +37,76 @@
 	transition:0.2s;
 }
 
+/*Гости*/
+
+.guests{
+	width:266px;
+	margin-bottom:20px;
+	padding:10px 0;
+}
+
+.left_bar .guests i {
+	position:absolute !important;
+	top:14px;
+}
+
+
+/*.input_favorite {
+	margin:0;
+}*/
+
+
+/*.input_favorite {
+	width:266px;
+}
+
+.guests input:hover {
+	display:block;
+}*/
+.guests .dropBlock{
+	display:none;
+	z-index:1;
+	position:relative;
+	top:0;
+	cursor:pointer;
+	width:266px;
+}
+
+.drop_block_item {
+	width:266px !important;
+}
+
+#dropItem1 {
+	margin-right:80px;
+}
+
+#dropItem2 {
+	margin-right:115px;
+}
+
+#dropItem3 {
+	margin-right:75px;
+}
+
+.guests .dropBlock input {
+	border:none;
+}
+
+#temp {
+	position:absolute;
+	left:20px;
+}
+
+
+.guests:active > .dropBlock {
+	display:block;
+}
+
+.dropBlock:hover {
+	display:block;
+}
+
+
 .content_search_room i {
 	position:absolute;
 	font-size:18px;
@@ -50,6 +120,7 @@
 .content_search_room .price_hotel {
 	width:266px;
 	margin-bottom:30px;
+	z-index:-1;
 }
 
 .content_search_room .price_hotel input{
@@ -64,6 +135,7 @@
 }
 
 /*Слайдер выбора цен*/
+
 #form {
     margin:0;
     display:flex;
@@ -75,6 +147,8 @@
 .bar {
     margin-bottom:7px;
     padding:5px 0;
+    position:relative;
+    z-index:0;
 }
 .button:hover {
     background: #95272f;
@@ -313,13 +387,24 @@
 	opacity:0;
 }
 
+.container_a {
+	width:41px;
+	height:151px;
+}
+
 .room_in_hotel .container:hover > .move_arrow {
 	opacity:1;
 }
 
-.move_arrow i {
+.move_arrow .icon {
+	width:10px;
+	height:13px;
+	background-image:url(image/expand_more_left.svg);
+	background-position:center;
+	background-repeat:no-repeat;
 	position:absolute;
 	top:75.5px;
+	left:12px;
 	color:white;
 }
 /*стрелка слева*/
@@ -435,8 +520,22 @@
 	padding-right:22px;
 	background-image:url(image/star.svg);
 	background-repeat:no-repeat;
+}
+
+/*Звезды без оценки*/
+.stars_border {
+	width:20px;
+	height:20px;
+	padding-right:22px;
+	background-image:url(image/star_border.svg);
+	background-repeat:no-repeat;
 	cursor:pointer;
 }
+
+.stars_border:hover {
+	background-image:url(image/star.svg);
+}
+
 /*Отзывы*/
 .feedback {
 	height:18px;

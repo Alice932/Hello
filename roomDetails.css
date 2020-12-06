@@ -477,7 +477,7 @@
 	position:absolute;
 	top:44px;
 	right:10px;
-	background-image:url(image/expand_more.png);
+	background-image:url(image/expand_more.svg);
 	background-repeat:no-repeat;
 }
 
@@ -506,6 +506,49 @@
 	transition:0.3s;
 }
 
+.guests {
+	width:322px;
+}
+
+.guests {
+	padding:10px 0;
+}
+
+#temp {
+	margin-left:20px;
+}
+
+.guests .dropBlock input{
+	border:none;
+}
+
+.guests:active > .dropBlock{
+	display:block;
+}
+
+.dropBlock:hover {
+	display:block;
+}
+
+#dropItem1 {
+	margin-right:124px;
+}
+#dropItem2 {
+	margin-right:160px;
+}
+
+.guests .dropBlock {
+	position:relative;
+	z-index:1;
+	padding-top:44px;
+	position:absolute;
+	top:0;
+}
+
+.dropBlock {
+	display:none;
+}
+
 .booking_guests input:hover {
 	border-color:#8C8C92;
 	transition:0.3s;
@@ -520,7 +563,7 @@
 	position:absolute;
 	top:44px;
 	right:10px;
-	background-image:url(image/expand_more.png);
+	background-image:url(image/expand_more.svg);
 	background-repeat:no-repeat;
 }
 
