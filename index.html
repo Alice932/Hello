@@ -236,15 +236,19 @@
 						Гости
 					</p>
 					<div class="guests">
-						<div class="dropBlock">
+						<input placeholder="Сколько Гостей" autocomplete="off" readonly="">
+							<div class="arrow">
+							</div>
+					</div>
+						<div class="dropBlock hide">
 							<div class="drop_block_item">
 								<div class="drop_block_row">
 									<span class="dropItem" id="dropItem1">Взрослые</span>
 									<button class="circle_drop_item circle_drop_minus" data-direction="minus">
 										-
 									</button>
-										<input type="text" class="counter" value="0">
-									<button class="circle_drop_item circle_drop_plus" data-direction="plus" onclick="backCircle()">
+										<input type="text" id ="counter1" class="counter" value="0">
+									<button class="circle_drop_item circle_drop_plus" data-direction="plus">
 										+
 									</button>
 								</div>
@@ -253,7 +257,7 @@
 									<button class="circle_drop_item circle_drop_minus" data-direction="minus">
 										-
 									</button>
-										<input class="counter" value="0">
+										<input id ="counter2"class="counter" value="0">
 									<button class="circle_drop_item circle_drop_plus"data-direction="plus">
 										+
 									</button>
@@ -263,21 +267,18 @@
 									<button class="circle_drop_item circle_drop_minus" data-direction="minus">
 										-
 									</button>
-										<input class="counter" value="0">
+										<input id ="counter3"class="counter" value="0">
 									<button class="circle_drop_item circle_drop_plus" data-direction="plus">
 										+
 									</button>
 								</div>
 								<div class="drop_function">
-									<a href="#!" id="clear" data-direction="clear" class="link_drop_function">ОЧИСТИТЬ</a>
-									<a href="#!" class="link_drop_function">ПРИМЕНИТЬ</a>
+									<button id = "clear" class="link_drop_function">ОЧИСТИТЬ</button>
+									<button class="link_drop_function" id = "apply">ПРИМЕНИТЬ</button>
 								</div>
 							</div>
 						</div>
-						<input placeholder="Сколько Гостей" autocomplete="off" readonly="">
-							<div class="arrow">
-							</div>
-					</div>
+					<!-- </div> -->
 				</div>
 				<a href="searchRoom.html">
 				<div class="block4">
@@ -349,5 +350,6 @@
 
 <script src="js/click.js"></script>
 <script src="js/menu.js"></script> 
+<script type="text/javascript" src="js/close.js"></script>
 </body>
 </html>

@@ -312,14 +312,35 @@
 }
 
 
-.heart i{
+.fa_heart {
+	width:14px;
+	height:12px;
+	background:url(image/favorite_border.png);
+	background-repeat:no-repeat;
 	position:absolute;
-	top:5px;
-	left:5px;
-	font-size:10px;
+	top:3.5px;
+	left:3px;
 }
 
-.heart span {
+.fill_heart {
+	background:url(image/favorite.png);
+}
+
+.border_heart {
+	background:url(image/favorite_border.png);
+}
+
+#span_heart {
+	padding:0;
+	margin:0;
+	width:10px;
+	height:14px;
+	position:absolute;
+	top:-2.5px;
+	right:4.5px;
+}
+
+.heart_1 span {
 	margin-left:5px;
 	font-size:11px;
 	width:10px;
@@ -336,10 +357,6 @@
 	color:#C7C7CF;
 }
 
-.heart_2:hover {
-	color:#BC9CFF;
-	border-color:#BC9CFF;
-}
 
 /*Правила номера и отмена*/
 .order_rooms .container {

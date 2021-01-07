@@ -523,7 +523,6 @@ button {
 .dropBlock {
 	width:320px;
 	height:159px; 
-	padding-top:43px;
 }
 
 .dropBlock .drop_block_item {
@@ -581,7 +580,6 @@ button {
 	text-align:center;
 	cursor:pointer;
 	background:white;
-	color:rgba(31, 32, 65, 1);
 	transition:0.1s;
 }
 
@@ -590,14 +588,18 @@ button {
 	border-color:rgba(31, 32, 65, 0.25);
 }
 
+.circle_opacity {
+	opacity:1;
+}
+
 .dropBlock .circle_drop_plus {
 	margin-right:0;
 	margin-left:4px;
-	border:1px solid rgba(31, 32, 65, 0.5);
+	border-color:#9393A3;
 }
 
 /*анимация кнопки по нажатию плюса и минуса*/
-.dropBlock button:active{
+.dropBlock .circle_drop_item:active{
 	color:white;
 	border-color:white;
 	background:#C8AEFF;
@@ -605,6 +607,13 @@ button {
 	font-weight:bold;
 }
 
+.link_drop_function {
+	border:none;
+	background-color:#fff;
+	color:#BC9CFF;
+	font-weight:bold;
+	cursor:pointer;
+}
 
 .dropBlock .circle_drop_item {
 	opacity:0.5;
@@ -637,27 +646,26 @@ button {
 	display:block;
 }
 
-.circle_drop_plus > #clear{
-	display:none;
-}
-
-
 .search_room .guests {
 	cursor:pointer;
 }
 
-.search_room .block3 .guests:active > .dropBlock {
+/*.search_room .block3 .guests:active > #dropBlock {
 	display:block;
-}
+}*/
 
 .search_room .guests .dropBlock {
-	display:none;
 	position:absolute;
+	z-index:0;
 }
 
-.search_room .guests .dropBlock:hover {
-	display:block;
+.hide {
+	display:none;
 }
+
+/*.search_room .guests .dropBlock:hover {
+	display:block;
+}*/
 
 /*блоки с прибытием отправкой и гостями */
 .date_arrival, .date_departure, .guests {
