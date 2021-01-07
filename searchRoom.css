@@ -32,7 +32,7 @@
 	transition:0.2s;
 }
 /*Исправить грешок (parcel or webpack)*/
-.h_span_block_hotel:after {
+.data_arrival_in_otel:after {
 	content:'';
 	display:inline-block;
 	position:absolute;
